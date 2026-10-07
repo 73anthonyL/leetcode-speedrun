@@ -1,27 +1,47 @@
 # leetcode-speedrun
 
-LeetCode solutions in Python.
+My LeetCode solutions in Python 3, grouped by difficulty.
 
-## Why this exists
+<!-- TODO: one line on what "speedrun" means for you (timed solves? a target pace? a topic order?) -->
 
-Most of my data structures and algorithms experience is in C++. I did competitive programming through USACO (Silver) and reached Expert on Codeforces. I'm now using Python for almost everything, so I'm working through LeetCode to get the same fluency in it: idiomatic Python, the standard library (`collections`, `heapq`, `bisect`, `itertools`), and the performance trade-offs that differ from C++.
+## Structure
+
+```
+leetcode-speedrun/
+├── easy/       # 21 Easy solutions, one file per problem
+└── README.md
+```
+
+Each file is named after the problem title in PascalCase and uses LeetCode's `Solution` class format. Medium and hard folders will be added as I get to them.
 
 ## Solutions
 
-| # | Problem | Difficulty | Solution |
-|---|---------|------------|----------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [TwoSum.py](easy/TwoSum.py) |
-| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | [PalindromeNumber.py](easy/PalindromeNumber.py) |
-| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | [RomanToInteger.py](easy/RomanToInteger.py) |
-| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | [LongestCommonPrefix.py](easy/LongestCommonPrefix.py) |
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [ValidParentheses.py](easy/ValidParentheses.py) |
-| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [MergeTwoSortedLists.py](easy/MergeTwoSortedLists.py) |
-| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | [RemoveDuplicatesFromSortedArray.py](easy/RemoveDuplicatesFromSortedArray.py) |
-| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | [RemoveElement.py](easy/RemoveElement.py) |
-| 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | [SearchInsertPosition.py](easy/SearchInsertPosition.py) |
+### Easy
 
-**Progress:** 9 solved (9 easy, 0 medium, 0 hard)
+| # | Problem | Topic |
+|---|---------|-------|
+| 1 | [Two Sum](easy/TwoSum.py) | Array, Hash Table |
+| 9 | [Palindrome Number](easy/PalindromeNumber.py) | Math |
+| 13 | [Roman to Integer](easy/RomanToInteger.py) | Hash Table, String |
+| 14 | [Longest Common Prefix](easy/LongestCommonPrefix.py) | String |
+| 20 | [Valid Parentheses](easy/ValidParentheses.py) | Stack, String |
+| 21 | [Merge Two Sorted Lists](easy/MergeTwoSortedLists.py) | Linked List |
+| 26 | [Remove Duplicates from Sorted Array](easy/RemoveDuplicatesFromSortedArray.py) | Two Pointers |
+| 27 | [Remove Element](easy/RemoveElement.py) | Two Pointers |
+| 35 | [Search Insert Position](easy/SearchInsertPosition.py) | Binary Search |
+| 67 | [Add Binary](easy/AddBinary.py) | Math, String |
+| 69 | [Sqrt(x)](easy/SqrtX.py) | Binary Search, Math |
+| 70 | [Climbing Stairs](easy/ClimbingStairs.py) | Dynamic Programming |
+| 83 | [Remove Duplicates from Sorted List](easy/RemoveDuplicatesFromSortedList.py) | Linked List |
+| 88 | [Merge Sorted Array](easy/MergedSortedArray.py) | Two Pointers |
+| 94 | [Binary Tree Inorder Traversal](easy/BinaryTreeInorderTraversal.py) | Tree, DFS |
+| 100 | [Same Tree](easy/SameTree.py) | Tree, DFS |
+| 101 | [Symmetric Tree](easy/SymmetricTree.py) | Tree, DFS/BFS |
+| 104 | [Maximum Depth of Binary Tree](easy/MaximumDepthOfBinaryTree.py) | Tree, DFS |
+| 108 | [Convert Sorted Array to Binary Search Tree](easy/ConvertSortedArrayToBinarySearchTree.py) | Tree, Divide and Conquer |
+| 110 | [Balanced Binary Tree](easy/BalancedBinaryTree.py) | Tree, DFS |
+| 111 | [Minimum Depth of Binary Tree](easy/MinimumDepthOfBinaryTree.py) | Tree, DFS/BFS |
 
-## Layout
+## Running a solution
 
-Solutions are grouped by difficulty (`easy/`, `medium/`, `hard/`), one file per problem, written in LeetCode's `class Solution` format.
+Solutions are written in LeetCode's format (a `Solution` class with the problem's method), so to test one locally you'll need to define `TreeNode` or `ListNode` where the problem uses them, or paste the code into LeetCode.
